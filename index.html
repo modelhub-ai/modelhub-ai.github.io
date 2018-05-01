@@ -15,7 +15,7 @@
 	<!-- One Page Module Specific Stylesheet -->
 	<link rel="stylesheet" href="css/onepage.css" type="text/css" />
 	<!-- / -->
-	<link rel="icon" href="images/favicon_.ico" type="image/x-icon" />
+	<link rel="icon" href="images/favicon.png" type="image/x-icon" />
 
 	<link rel="stylesheet" href="css/dark.css" type="text/css" />
 	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
@@ -33,7 +33,7 @@
 
 	<!-- Document Title
 	============================================= -->
-	<title>modelhub.ai | deep learning models for medical data</title>
+	<title>MODELHUB.AI | deep learning models for medical data</title>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-53741901-13"></script>
@@ -70,7 +70,7 @@
 					<!-- Logo
 					============================================= -->
 					<div id="logo">
-						<a href="index.html" data-dark-logo="images/modelhub.png"><img src="images/modelhub.png" alt="Canvas Logo"></a>
+						<a href="index.html"><img id="logosvg" src="images/logo-green.svg" alt="Modelhub Logo"></a>
 					</div>
 					<!-- #logo end -->
 
@@ -87,6 +87,11 @@
 							<li>
 								<a href="#" data-href="#section-about">
 									<div>About</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" data-href="#section-collection">
+									<div>Collection</div>
 								</a>
 							</li>
 							<li>
@@ -143,7 +148,7 @@
 
 						</div>
 
-						<a href="#" class="button button-border button-circle" data-scrollto="#section-contribute" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">contribute</a>
+						<a href="#" class="button button-border button-circle" data-scrollto="#section-collection" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">collection</a>
 
 					</div>
 				</div>
@@ -248,128 +253,143 @@
 				</div>
 
 
+				<div id="section-collection" class="page-section">
 
-
-
-				<div id="section-data" class="page-section">
-
-					<h2 class="center uppercase t300 ls3 font-body">Data</h2>
+					<h2 class="center uppercase t300 ls3 font-body">Collection</h2>
 
 					<div class="container common-height clearfix">
 
 
-						<div class="max-height">
-							<div class="row common-height grid-border clearfix">
-								<div class="col-md-3 col-sm-6 col-padding">
-									<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
-										<div class="fbox-icon">
-											<a href="#"><i class="icon-medical-i-cath-lab"></i></a>
-										</div>
-										<h3>Radiographic</h3>
-									</div>
+						<!-- <div class="col_half panel panel-default">
+						</div> -->
+
+						<div class="panel panel-default col_last">
+							<div class="panel-heading">
+								<h2 class="panel-title">SqueezeNet</h2>
+							</div>
+							<div class="panel-body">
+								<div class="title">SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and
+									<0.5MB model size</div>
+										<div class="authors">Forrest N. Iandola, Song Han, Matthew W. Moskewicz, Khalid Ashraf, William J. Dally, Kurt Keutzer</div>
+										</br>
+										Recent research on deep neural networks has focused primarily on improving accuracy. For a given accuracy level, it is typically possible to identify multiple DNN architectures that achieve that accuracy level. With equivalent accuracy, smaller DNN architectures
+										offer at least three advantages: (1) Smaller DNNs require less communication across servers during distributed training. (2) Smaller DNNs require less bandwidth to export a new model from the cloud to an autonomous car. (3) Smaller DNNs are
+										more feasible to deploy on FPGAs and other hardware with limited memory. To provide all of these advantages, we propose a small DNN architecture called SqueezeNet. SqueezeNet achieves AlexNet-level accuracy on ImageNet with 50x fewer parameters.
+										Additionally, with model compression techniques we are able to compress SqueezeNet to less than 0.5MB (510x smaller than AlexNet).
+										</br>
+										</br>
+										<a target="_blank" href="https://arxiv.org/abs/1602.07360" class="button button-circle">Arxiv</a>
+										<a target="_blank" href="#" class="button button-circle">Test Drive</a>
+										<a target="_blank" href="#" class="button button-circle">Jupyter notebook</a>
+										<a target="_blank" href="https://github.com/modelhub-ai/modelhub/blob/master/start_scripts/start_squeezenet.sh" class="button button-circle">Source</a>
 								</div>
-								<div class="col-md-3 col-sm-6 col-padding">
-									<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
-										<div class="fbox-icon">
-											<a href="#"><i class="icon-medical-i-genetics"></i></a>
+							</div>
+
+							<!-- <div class="line"></div> -->
+
+						</div>
+
+					</div>
+
+
+					<div id="section-data" class="page-section">
+
+						<h2 class="center uppercase t300 ls3 font-body">Data</h2>
+
+						<div class="container common-height clearfix">
+
+
+							<div class="max-height">
+								<div class="row common-height grid-border clearfix">
+									<div class="col-md-3 col-sm-6 col-padding">
+										<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
+											<div class="fbox-icon">
+												<a href="#"><i class="icon-medical-i-cath-lab"></i></a>
+											</div>
+											<h3>Radiographic</h3>
 										</div>
-										<h3>genomic</h3>
 									</div>
-								</div>
-								<div class="col-md-3 col-sm-6 col-padding">
-									<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
-										<div class="fbox-icon">
-											<a href="#"><i class="icon-medical-i-pathology"></i></a>
+									<div class="col-md-3 col-sm-6 col-padding">
+										<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
+											<div class="fbox-icon">
+												<a href="#"><i class="icon-medical-i-genetics"></i></a>
+											</div>
+											<h3>genomic</h3>
 										</div>
-										<h3>microscopic</h3>
 									</div>
-								</div>
-								<div class="col-md-3 col-sm-6 col-padding">
-									<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
-										<div class="fbox-icon">
-											<a href="#"><i class="icon-line-image"></i></a>
+									<div class="col-md-3 col-sm-6 col-padding">
+										<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
+											<div class="fbox-icon">
+												<a href="#"><i class="icon-medical-i-pathology"></i></a>
+											</div>
+											<h3>microscopic</h3>
 										</div>
-										<h3>photographic</h3>
 									</div>
-								</div>
-								<div class="col-md-3 col-sm-6 col-padding">
-									<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
-										<div class="fbox-icon">
-											<a href="#"><i class="icon-file-text"></i></a>
+									<div class="col-md-3 col-sm-6 col-padding">
+										<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
+											<div class="fbox-icon">
+												<a href="#"><i class="icon-line-image"></i></a>
+											</div>
+											<h3>photographic</h3>
 										</div>
-										<h3>textual</h3>
 									</div>
-								</div>
-								<div class="col-md-3 col-sm-6 col-padding">
-									<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
-										<div class="fbox-icon">
-											<a href="#"><i class="icon-sound"></i></a>
+									<div class="col-md-3 col-sm-6 col-padding">
+										<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
+											<div class="fbox-icon">
+												<a href="#"><i class="icon-file-text"></i></a>
+											</div>
+											<h3>textual</h3>
 										</div>
-										<h3>audio</h3>
 									</div>
-								</div>
-								<div class="col-md-3 col-sm-6 col-padding">
-									<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
-										<div class="fbox-icon">
-											<a href="#"><i class="icon-facetime-video"></i></a>
+									<div class="col-md-3 col-sm-6 col-padding">
+										<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
+											<div class="fbox-icon">
+												<a href="#"><i class="icon-sound"></i></a>
+											</div>
+											<h3>audio</h3>
 										</div>
-										<h3>video</h3>
 									</div>
-								</div>
-								<div class="col-md-3 col-sm-6 col-padding">
-									<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
-										<div class="fbox-icon">
-											<a href="#"><i class="icon-medical-i-cardiology"></i></a>
+									<div class="col-md-3 col-sm-6 col-padding">
+										<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
+											<div class="fbox-icon">
+												<a href="#"><i class="icon-facetime-video"></i></a>
+											</div>
+											<h3>video</h3>
 										</div>
-										<h3>numeric stream</h3>
+									</div>
+									<div class="col-md-3 col-sm-6 col-padding">
+										<div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
+											<div class="fbox-icon">
+												<a href="#"><i class="icon-medical-i-cardiology"></i></a>
+											</div>
+											<h3>numeric stream</h3>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-
-					</div>
-
-				</div>
-
-
-				<!-- 				<div id="section-blog" class="page-section">
-
-					<div class="container topmargin-lg clearfix">
-
-						<div id="oc-clients" class="owl-carousel topmargin image-carousel carousel-widget" data-margin="80" data-loop="true" data-nav="false" data-autoplay="5000" data-pagi="false"data-items-xxs="2" data-items-xs="3" data-items-sm="4" data-items-md="5" data-items-lg="6">
-
-							<div class="oc-item"><a href="#"><img src="../images/clients/1.png" alt="Clients"></a></div>
-							<div class="oc-item"><a href="#"><img src="../images/clients/2.png" alt="Clients"></a></div>
-							<div class="oc-item"><a href="#"><img src="../images/clients/3.png" alt="Clients"></a></div>
-							<div class="oc-item"><a href="#"><img src="../images/clients/4.png" alt="Clients"></a></div>
-							<div class="oc-item"><a href="#"><img src="../images/clients/5.png" alt="Clients"></a></div>
-							<div class="oc-item"><a href="#"><img src="../images/clients/6.png" alt="Clients"></a></div>
-							<div class="oc-item"><a href="#"><img src="../images/clients/7.png" alt="Clients"></a></div>
-							<div class="oc-item"><a href="#"><img src="../images/clients/8.png" alt="Clients"></a></div>
-							<div class="oc-item"><a href="#"><img src="../images/clients/9.png" alt="Clients"></a></div>
-							<div class="oc-item"><a href="#"><img src="../images/clients/10.png" alt="Clients"></a></div>
 
 						</div>
 
 					</div>
 
-				</div> -->
 
-				<div id="section-contribute" class="page-section notoppadding">
 
-					<h2 class="center uppercase t300 ls3 font-body">Contribute</h2>
 
-					<div class="container clearfix">
+					<div id="section-contribute" class="page-section notoppadding">
 
-						<div class="divcenter topmargin" style="max-width: 850px;">
+						<h2 class="center uppercase t300 ls3 font-body">Contribute</h2>
 
-							<div class="contact-widget">
+						<div class="container clearfix">
 
-								<div class="contact-form-result"></div>
+							<div class="divcenter topmargin" style="max-width: 850px;">
 
-								<!-- 							<form class="nobottommargin" id="template-contactform" name="template-contactform" action="include/sendemail.php" method="post"> -->
+								<div class="contact-widget">
 
-								<!-- 								<div class="form-process"></div>
+									<div class="contact-form-result"></div>
+
+									<!-- 							<form class="nobottommargin" id="template-contactform" name="template-contactform" action="include/sendemail.php" method="post"> -->
+
+									<!-- 								<div class="form-process"></div>
 
 								<div class="col_half">
 									<input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="sm-form-control border-form-control required" placeholder="Name" />
@@ -394,29 +414,29 @@
 									<textarea class="required sm-form-control border-form-control" id="template-contactform-message" name="template-contactform-message" rows="7" cols="30" placeholder="Your Message"></textarea>
 								</div> -->
 
-								<div class="col_full center">
-									<small style="display: block; font-size: 13px; margin-top: 15px;">Contribute your deep learning model by filling in this form.</small>
-									<a href="https://goo.gl/forms/2OXolL5joOTffzx53" target="_blank">
+									<div class="col_full center">
+										<small style="display: block; font-size: 13px; margin-top: 15px;">Contribute your deep learning model by filling in this form.</small>
+										<a href="https://goo.gl/forms/2OXolL5joOTffzx53" target="_blank">
 									<button class="button button-border button-circle t500 noleftmargin topmargin-sm">Contribution form</button>
 									</a>
-									<br>
-								</div>
+										<br>
+									</div>
 
-								<div class="clear"></div>
+									<div class="clear"></div>
 
-								<!-- 								<div class="col_full hidden">
+									<!-- 								<div class="col_full hidden">
 									<input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control" />
 								</div> -->
 
-								<!-- 							</form> -->
+									<!-- 							</form> -->
+
+								</div>
 
 							</div>
 
 						</div>
 
 					</div>
-
-				</div>
 
 		</section>
 		<!-- #content end -->
