@@ -254,41 +254,70 @@
 
 
 				<div id="section-collection" class="page-section">
-
 					<h2 class="center uppercase t300 ls3 font-body">Collection</h2>
-
 					<div class="container common-height clearfix">
 
+						<h4>SqueezeNet</h4>
+						<div class="tabs tabs-bordered clearfix" id="tab-2">
+							<ul class="tab-nav clearfix">
+								<li><a href="#tabs-5">OVERVIEW</a></li>
+								<li><a href="#tabs-6">MODEL</a></li>
+								<li><a href="#tabs-7">RUN INSTRUCTIONS</a></li>
+							</ul>
+							<div class="tab-container">
 
-						<!-- <div class="col_half panel panel-default">
-						</div> -->
+								<div class="tab-content clearfix" id="tabs-5">
+									<div class="title">SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and
+										<0.5MB model size</div>
+											<div class="authors">Forrest N. Iandola, Song Han, Matthew W. Moskewicz, Khalid Ashraf, William J. Dally, Kurt Keutzer</div>
+											</br>
+											Recent research on deep neural networks has focused primarily on improving accuracy. For a given accuracy level, it is typically possible to identify multiple DNN architectures that achieve that accuracy level. With equivalent accuracy, smaller DNN architectures
+											offer at least three advantages: (1) Smaller DNNs require less communication across servers during distributed training. (2) Smaller DNNs require less bandwidth to export a new model from the cloud to an autonomous car. (3) Smaller DNNs are
+											more feasible to deploy on FPGAs and other hardware with limited memory. To provide all of these advantages, we propose a small DNN architecture called SqueezeNet. SqueezeNet achieves AlexNet-level accuracy on ImageNet with 50x fewer parameters.
+											Additionally, with model compression techniques we are able to compress SqueezeNet to less than 0.5MB (510x smaller than AlexNet).
+											</br>
+											</br>
+											<a target="_blank" href="https://arxiv.org/abs/1602.07360" class="button button-rounded"><i class="icon-book3"></i> Arxiv</a>
+											<a target="_blank" href="http://34.228.165.69:4000/" class="button button-rounded"><i class="icon-play-circle"></i> Test Drive</a>
 
-						<div class="panel panel-default col_last">
-							<div class="panel-heading">
-								<h2 class="panel-title">SqueezeNet</h2>
-							</div>
-							<div class="panel-body">
-								<div class="title">SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and
-									<0.5MB model size</div>
-										<div class="authors">Forrest N. Iandola, Song Han, Matthew W. Moskewicz, Khalid Ashraf, William J. Dally, Kurt Keutzer</div>
-										</br>
-										Recent research on deep neural networks has focused primarily on improving accuracy. For a given accuracy level, it is typically possible to identify multiple DNN architectures that achieve that accuracy level. With equivalent accuracy, smaller DNN architectures
-										offer at least three advantages: (1) Smaller DNNs require less communication across servers during distributed training. (2) Smaller DNNs require less bandwidth to export a new model from the cloud to an autonomous car. (3) Smaller DNNs are
-										more feasible to deploy on FPGAs and other hardware with limited memory. To provide all of these advantages, we propose a small DNN architecture called SqueezeNet. SqueezeNet achieves AlexNet-level accuracy on ImageNet with 50x fewer parameters.
-										Additionally, with model compression techniques we are able to compress SqueezeNet to less than 0.5MB (510x smaller than AlexNet).
-										</br>
-										</br>
-										<a target="_blank" href="https://arxiv.org/abs/1602.07360" class="button button-circle">Arxiv</a>
-										<a target="_blank" href="http://34.228.165.69:4000/" class="button button-circle">Test Drive</a>
-										<a target="_blank" href="http://34.228.165.69:4000/" class="button button-circle">Jupyter notebook</a>
-										<a target="_blank" href="https://github.com/modelhub-ai/modelhub/blob/master/start_scripts/start_squeezenet.sh" class="button button-circle">Source</a>
+											<!-- <a target="_blank" href="https://github.com/modelhub-ai/modelhub/blob/master/start_scripts/start_squeezenet.sh" class="button button-circle">Source</a> -->
+									</div>
+
+
+									<div class="tab-content clearfix" id="tabs-6">
+										<div class="key">License</div>
+										<div class="value">BSD 2-Clause 'Simplified'</div>
+										<div class="key">Application</div>
+										<div class="value">ImageNet</div>
+										<div class="key">Type</div>
+										<div class="value">Supervised learning</div>
+										<div class="key">Description</div>
+										<div class="value">SqueezeNet begins with a standalone convolution layer (conv1), followed by 8 Fire modules (fire2-9), ending with a final conv layer (conv10). We gradually increase the number of filters per fire module from the beginning to the end of the network.
+											SqueezeNet performs max-pooling with a stride of 2 after layers conv1, fire4, fire8, and conv10</div>
+										<div class="key">Architecture</div>
+										<div class="value">Convolutional Neural Network (CNN)</div>
+
+									</div>
+
+									<div class="tab-content clearfix" id="tabs-7">
+										1. Install <a target="_blank" href="https://docs.docker.com/install/">Docker</a>. (CE is sufficient)
+										<br> 2. Download the bash script.
+										<br>
+										<div class="code">$ curl -O https://raw.githubusercontent.com/modelhub-ai/modelhub/master/start_scripts/start_squeezenet.sh</div>
+										3. Change permissions.
+										<div class="code">$ chmod +x start_squeezenet.sh</div>
+										4. Run. <br>For the basic test drive version:
+										<div class="code">$ sudo ./start_squeezenet.sh</div>
+										For the jupyter notebook version:
+										<div class="code">$ sudo ./start_squeezenet.sh -e</div>
+										To explore the docker:
+										<div class="code">$ sudo ./start_squeezenet.sh -b</div>
+									</div>
+
 								</div>
 							</div>
-
-							<!-- <div class="line"></div> -->
-
 						</div>
-
+						<!-- <div class="line"></div> -->
 					</div>
 
 
