@@ -122,6 +122,18 @@ margin-top: 20px;
 .title {
 	font-size: 24px;
 }
+
+.key {
+	font-size: 18px;
+}
+.value {
+	font-size: 12px;
+}
+.code {
+	background-color: #F9F9F9;
+	padding-left: 25px;
+	font-family: 'Courier', sans-serif;
+}
 /* ----------------------------------------------------------------
 	Basic
 -----------------------------------------------------------------*/
