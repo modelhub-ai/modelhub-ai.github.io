@@ -262,7 +262,66 @@
 					<h2 class="center uppercase t300 ls3 font-body">Collection</h2>
 					<div class="container common-height clearfix">
 
-						<h3>SqueezeNet</h3>
+						<h2>CardiacFCN</h2>
+						<div class="tabs tabs-bordered clearfix" id="tab-2">
+							<ul class="tab-nav clearfix">
+								<li><a href="#tabs-5">OVERVIEW</a></li>
+								<li><a href="#tabs-6">MODEL</a></li>
+								<li><a href="#tabs-7">RUN INSTRUCTIONS</a></li>
+							</ul>
+							<div class="tab-container">
+
+								<div class="tab-content clearfix" id="tabs-5">
+									<div class="title">A Fully Convolutional Neural Network for Cardiac Segmentation in Short-Axis MRI</div>
+									<div class="authors">Phi Vu Tran</div>
+									</br>
+									Automated cardiac segmentation from magnetic resonance imaging datasets is an essential step in the timely diagnosis and management of cardiac pathologies. We propose to tackle the problem of automated left and right ventricle segmentation through the
+									application of a deep fully convolutional neural network architecture. Our model is efficiently trained end-to-end in a single learning stage from wholeimage inputs and ground truths to make inference at every pixel. To our knowledge, this is
+									the first application of a fully convolutional neural network architecture for pixel-wise labeling in cardiac magnetic resonance imaging. Numerical experiments demonstrate that our model is robust to outperform previous fully automated methods
+									across multiple evaluation measures on a range of cardiac datasets. Moreover, our model is fast and can leverage commodity compute resources such as the graphics processing unit to enable state-of-the-art cardiac segmentation at massive scales.
+									The models and code are available at https://github.com/vuptran/cardiac-segmentation.
+									</br>
+									</br>
+									<a target="_blank" href="https://arxiv.org/abs/1604.00494" class="button button-rounded"><i class="icon-book3"></i> Arxiv</a>
+									<a target="_blank" href="cardiacfcn.html" class="button button-rounded"><i class="icon-play-circle"></i> Test Drive</a>
+
+									<!-- <a target="_blank" href="https://github.com/modelhub-ai/modelhub/blob/master/start_scripts/start_squeezenet.sh" class="button button-circle">Source</a> -->
+								</div>
+
+
+								<div class="tab-content clearfix" id="tabs-6">
+									<div class="key">Description</div>
+									<div class="value">The proposed FCN architecture is efficiently trained end-to-end on a graphics processing unit (GPU) in a single learning stage from whole image inputs and ground truths to make inference at every pixel, a task commonly known as pixel-wise labeling
+										or per-pixel classification.</div>
+									<div class="key">Architecture</div>
+									<div class="value">Fully Convolutional Neural Network (CNN)</div>
+									<div class="key">Application</div>
+									<div class="value">Cardiac Imaging</div>
+									<div class="key">Type</div>
+									<div class="value">Supervised learning</div>
+									<div class="key">License</div>
+									<div class="value">MIT</div>
+								</div>
+
+								<div class="tab-content clearfix" id="tabs-7">
+									* only linux is currently supported. <br><br> 1. Install <a target="_blank" href="https://docs.docker.com/install/">Docker</a>. (CE is sufficient)
+									<br> 2. Download the bash script.
+									<br>
+									<div class="code">$ curl -O https://raw.githubusercontent.com/modelhub-ai/modelhub/master/start_scripts/start_cardiacfcn.sh</div>
+									3. Change permissions.
+									<div class="code">$ chmod +x start_cardiacfcn.sh</div>
+									4. Run. <br>For the basic test drive version:
+									<div class="code">$ sudo ./start_cardiacfcn.sh</div>
+									For the jupyter notebook version:
+									<div class="code">$ sudo ./start_cardiacfcn.sh -e</div>
+									To explore the docker:
+									<div class="code">$ sudo ./start_cardiacfcn.sh -b</div>
+								</div>
+
+							</div>
+						</div>
+
+						<h2>SqueezeNet</h2>
 						<div class="tabs tabs-bordered clearfix" id="tab-2">
 							<ul class="tab-nav clearfix">
 								<li><a href="#tabs-5">OVERVIEW</a></li>
@@ -283,25 +342,24 @@
 											</br>
 											</br>
 											<a target="_blank" href="https://arxiv.org/abs/1602.07360" class="button button-rounded"><i class="icon-book3"></i> Arxiv</a>
-											<a target="_blank" href="http://34.228.165.69:4000/" class="button button-rounded"><i class="icon-play-circle"></i> Test Drive</a>
+											<a target="_blank" href="squeezenet.html" class="button button-rounded"><i class="icon-play-circle"></i> Test Drive</a>
 
 											<!-- <a target="_blank" href="https://github.com/modelhub-ai/modelhub/blob/master/start_scripts/start_squeezenet.sh" class="button button-circle">Source</a> -->
 									</div>
 
 
 									<div class="tab-content clearfix" id="tabs-6">
-										<div class="key">License</div>
-										<div class="value">BSD 2-Clause 'Simplified'</div>
-										<div class="key">Application</div>
-										<div class="value">ImageNet</div>
-										<div class="key">Type</div>
-										<div class="value">Supervised learning</div>
 										<div class="key">Description</div>
 										<div class="value">SqueezeNet begins with a standalone convolution layer (conv1), followed by 8 Fire modules (fire2-9), ending with a final conv layer (conv10). We gradually increase the number of filters per fire module from the beginning to the end of the network.
 											SqueezeNet performs max-pooling with a stride of 2 after layers conv1, fire4, fire8, and conv10</div>
 										<div class="key">Architecture</div>
 										<div class="value">Convolutional Neural Network (CNN)</div>
-
+										<div class="key">Application</div>
+										<div class="value">ImageNet</div>
+										<div class="key">Type</div>
+										<div class="value">Supervised learning</div>
+										<div class="key">License</div>
+										<div class="value">BSD 2-Clause 'Simplified'</div>
 									</div>
 
 									<div class="tab-content clearfix" id="tabs-7">
@@ -321,6 +379,8 @@
 
 								</div>
 							</div>
+
+
 						</div>
 						<!-- <div class="line"></div> -->
 					</div>
