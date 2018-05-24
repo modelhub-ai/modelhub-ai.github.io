@@ -326,6 +326,66 @@
 							</div>
 						</div>
 
+
+						<h2>Cascaded-FCN Liver</h2>
+						<div class="tabs tabs-bordered clearfix" id="tab-2">
+							<ul class="tab-nav clearfix">
+								<li><a href="#tabs-5">OVERVIEW</a></li>
+								<li><a href="#tabs-6">MODEL</a></li>
+								<li><a href="#tabs-7">RUN INSTRUCTIONS</a></li>
+							</ul>
+							<div class="tab-container">
+
+								<div class="tab-content clearfix" id="tabs-5">
+									<div class="title">Automatic Liver and Lesion Segmentation in CT Using Cascaded Fully Convolutional Neural Networks and 3D Conditional Random Fields</div>
+									<div class="authors">Patrick Ferdinand Christ, Mohamed Ezzeldin A. Elshaer, Florian Ettlinger, Sunil Tatavarty, Marc Bickel, Patrick Bilic, Markus Rempfler, Marco Armbruster, Felix Hofmann, Melvin D'Anastasi, Wieland H. Sommer, Seyed-Ahmad Ahmadi, Bjoern H. Menze</div>
+									</br>
+									Automatic segmentation of the liver and its lesion is an important step towards deriving quantitative biomarkers for accurate clinical diagnosis and computer-aided decision support systems. This paper presents a method to automatically segment liver and
+									lesions in CT abdomen images using cascaded fully convolutional neural networks (CFCNs) and dense 3D conditional random fields (CRFs). We train and cascade two FCNs for a combined segmentation of the liver and its lesions. In the first step,
+									we train a FCN to segment the liver as ROI input for a second FCN. The second FCN solely segments lesions from the predicted liver ROIs of step 1. We refine the segmentations of the CFCN using a dense 3D CRF that accounts for both spatial coherence
+									and appearance. CFCN models were trained in a 2-fold cross-validation on the abdominal CT dataset 3DIRCAD comprising 15 hepatic tumor volumes. Our results show that CFCN-based semantic liver and lesion segmentation achieves Dice scores over 94%
+									for liver with computation times below 100s per volume. We experimentally demonstrate the robustness of the proposed method as a decision support system with a high accuracy and speed for usage in daily clinical routine.
+									</br>
+									</br>
+									<a target="_blank" href="https://arxiv.org/abs/1610.02177" class="button button-rounded"><i class="icon-book3"></i> Arxiv</a>
+									<a target="_blank" href="cascadedfcnliver.html" class="button button-rounded"><i class="icon-play-circle"></i> Test Drive</a>
+
+									<!-- <a target="_blank" href="https://github.com/modelhub-ai/modelhub/blob/master/start_scripts/start_squeezenet.sh" class="button button-circle">Source</a> -->
+								</div>
+
+
+								<div class="tab-content clearfix" id="tabs-6">
+									<div class="key">Description</div>
+									<div class="value">This model showcases the first step of the Automatic Liver and Lesion Segmentation. It segments the liver on a single slice CT image. The trained model for the second step (lesion segmentation) is included but not executed in the demo.</div>
+									<div class="key">Architecture</div>
+									<div class="value">Fully Convolutional Network (FCN)</div>
+									<div class="key">Application</div>
+									<div class="value">CT Abdomen</div>
+									<div class="key">Type</div>
+									<div class="value">Supervised learning</div>
+									<div class="key">License</div>
+									<div class="value">Unrestricted use for research and educational purposes.</div>
+								</div>
+
+								<div class="tab-content clearfix" id="tabs-7">
+									* only linux is currently supported. <br><br> 1. Install <a target="_blank" href="https://docs.docker.com/install/">Docker</a>. (CE is sufficient)
+									<br> 2. Download the bash script.
+									<br>
+									<div class="code">$ curl -O https://raw.githubusercontent.com/modelhub-ai/modelhub/master/start_scripts/start_CascadedFCN_Liver.sh</div>
+									3. Change permissions.
+									<div class="code">$ chmod +x start_CascadedFCN_Liver.sh</div>
+									4. Run. <br>For the basic test drive version:
+									<div class="code">$ sudo ./start_CascadedFCN_Liver.sh</div>
+									For the jupyter notebook version:
+									<div class="code">$ sudo ./start_CascadedFCN_Liver.sh -e</div>
+									To explore the docker:
+									<div class="code">$ sudo ./start_CascadedFCN_Liver.sh -b</div>
+								</div>
+
+							</div>
+						</div>
+
+
 						<h2>SqueezeNet</h2>
 						<div class="tabs tabs-bordered clearfix" id="tab-2">
 							<ul class="tab-nav clearfix">
